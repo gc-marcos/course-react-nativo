@@ -1,7 +1,12 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 
-import ContadorV2 from './components/contador/ContadorV2';
+import UsuarioLogado from './components/UsuarioLogado';
+// import Familia from './components/relacao/Familia';
+// import Membro from './components/relacao/Membro';
+//import ParImpar from './components/ParImpar';
+//import Diferenciar from './components/Diferenciar';
+//import ContadorV2 from './components/contador/ContadorV2';
 //import Pai from './components/indireta/Pai';
 //import Pai from './components/direta/Pai';
 //import Contador from './components/Contador';
@@ -14,8 +19,27 @@ import ContadorV2 from './components/contador/ContadorV2';
 
 export default () => (
   <SafeAreaView style={style.App}>
+    <UsuarioLogado usuario={{nome: 'Mar', email: 'mar@mar.com'}} />
+    <UsuarioLogado usuario={{nome: 'Ana'}} />
+    <UsuarioLogado usuario={{email: 'mar@mar.com'}} />
+    <UsuarioLogado usuario={null} />
+    <UsuarioLogado usuario={{}} />
+
+    {/*<Familia>
+      <Membro nome="Bia" sobrenome="Arruda" />
+      <Membro nome="Carlos" sobrenome="Arruda" />
+    </Familia>
+    <Familia>
+      <Membro nome="Julia" sobrenome="Silva" />
+      <Membro nome="Marcos" sobrenome="Silva" />
+      <Membro nome="Maria" sobrenome="Silva" />
+      <Membro nome="Marcio" sobrenome="Silva" />
+      <Membro nome="Robin" sobrenome="Silva" />
+    </Familia>
+    <ParImpar num={2} />
+    <Diferenciar />
     <ContadorV2 />
-    {/*<Pai />
+    <Pai />
     <Pai />
     <Contador inicial={100} passo={13} />
     <Contador />
