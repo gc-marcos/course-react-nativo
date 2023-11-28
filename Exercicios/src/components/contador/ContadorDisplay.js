@@ -1,11 +1,11 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {SafeAreaView, Text, StyleSheet} from 'react-native';
 import Estilo from '../estilo';
 
 export default props => {
   return (
     <SafeAreaView style={style.Display}>
-      <Text style={[Estilo.txtG, style.DisplayText]}> {props.num} </Text>;
+      <Text style={[Estilo.txtG, style.DisplayText]}>{props.num}</Text>
     </SafeAreaView>
   );
 };
