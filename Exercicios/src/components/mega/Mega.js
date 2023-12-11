@@ -61,6 +61,7 @@ export default class Mega extends Component {
 
         <View
           style={{
+            marginTop: 20,
             flexDirection: 'row',
             flexWrap: 'wrap',
             justifyContent: 'center',
