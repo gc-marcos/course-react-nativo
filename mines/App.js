@@ -67,7 +67,7 @@ export default class App extends Component {
     this.setState({board, won});
   };
 
-  onLevelSelection = level => {
+  onLevelSelected = level => {
     params.difficultLevel = level;
     this.setState(this.createState());
   };
@@ -77,7 +77,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <LevelSelection
           isVisible={this.state.showLevelSelection}
-          onLevelSelection={this.onLevelSelection}
+          onLevelSelected={this.onLevelSelected}
           onCancel={() => this.setState({showLevelSelection: false})}
         />
         <Header
