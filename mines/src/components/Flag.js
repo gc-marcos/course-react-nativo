@@ -4,10 +4,10 @@ import {View, StyleSheet} from 'react-native';
 export default props => {
   return (
     <View style={styles.container}>
-      <View style={[styles.flag, props.bigger ? styles.flagBigger : null]} />
       <View
         style={[styles.flagpole, props.bigger ? styles.flagpoleBigger : null]}
       />
+      <View style={[styles.flag, props.bigger ? styles.flagBigger : null]} />
       <View style={[styles.base1, props.bigger ? styles.base1Bigger : null]} />
       <View style={[styles.base2, props.bigger ? styles.base2Bigger : null]} />
     </View>
@@ -16,25 +16,25 @@ export default props => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 2,
+    marginTop: 3,
   },
   flagpole: {
     position: 'absolute',
-    height: 14,
+    heigth: 14,
     width: 2,
     backgroundColor: '#222',
     marginLeft: 9,
   },
   flag: {
     position: 'absolute',
-    height: 5,
+    heigth: 5,
     width: 6,
-    backgroundColor: '#f22',
+    backgroundColor: '#F22',
     marginLeft: 3,
   },
   base1: {
     position: 'absolute',
-    height: 2,
+    heigth: 2,
     width: 6,
     backgroundColor: '#222',
     marginLeft: 7,
@@ -42,19 +42,19 @@ const styles = StyleSheet.create({
   },
   base2: {
     position: 'absolute',
-    height: 2,
+    heigth: 2,
     width: 10,
     backgroundColor: '#222',
     marginLeft: 5,
     marginTop: 12,
   },
   flagpoleBigger: {
-    height: 28,
+    heigth: 28,
     width: 4,
     marginLeft: 16,
   },
   flagBigger: {
-    height: 10,
+    heigth: 10,
     width: 14,
     marginLeft: 3,
   },

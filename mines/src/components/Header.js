@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import Flag from './Flag';
 
 export default props => {
@@ -22,9 +22,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row',
-    backgroundColor: '#eee',
+    backgroundColor: '#EEE',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    alignContent: 'space-around',
     paddingTop: 20,
     paddingHorizontal: 20,
   },
@@ -44,10 +44,14 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: '#999',
     padding: 5,
+    // marginLeft: 10,
+    // borderRadius: 5,
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
   buttonLabel: {
     fontSize: 20,
-    color: '#ddd',
+    color: '#DDD',
     fontWeight: 'bold',
   },
 });
